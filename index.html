@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">import React from 'react';</p>
+<p class="p1">import { motion } from 'framer-motion';</p>
+<p class="p1">import { ChevronDown, ArrowRight, Heart, Users, Lightbulb, Rocket } from 'lucide-react';</p>
+<p class="p2"><br></p>
+<p class="p1">const Portfolio = () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return (</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div className="min-h-screen bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{/* Hero Section */}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section className="min-h-screen flex flex-col justify-center items-center relative p-8 bg-gradient-to-br from-purple-50 to-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;motion.div<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>initial={{ opacity: 0, y: 20 }}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>animate={{ opacity: 1, y: 0 }}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>transition={{ duration: 0.8 }}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>className="text-center max-w-3xl mx-auto"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Alaysia Brown</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p className="text-xl md:text-2xl text-gray-600 mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Crafting Bold &amp; Purposeful Brand Stories</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>I transform brands through authentic storytelling, creating meaningful connections that inspire action and drive impact.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button className="bg-purple-600 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-purple-700 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Explore My Work</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/motion.div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ChevronDown className="w-8 h-8 text-gray-400" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>{/* Featured Projects */}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section className="py-20 px-8 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div className="max-w-6xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2 className="text-3xl font-bold mb-12 text-center"&gt;Featured Projects&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div className="grid md:grid-cols-2 gap-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{[</p>
+<p class="p1"><span class="Apple-converted-space">              </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "Cutwater Influencer Program",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Designed and produced 'Bar Where You Are,' an immersive lake experience connecting Atlanta-based black male influencers with Cutwater Spirits.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "/api/placeholder/600/400",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>},</p>
+<p class="p1"><span class="Apple-converted-space">              </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "The Night Brunch Partnership",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Orchestrated a unique collaboration between Cutwater Spirits and The Night Brunch, featuring customized experiences and local partnerships in Baltimore.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "/api/placeholder/600/400",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>},</p>
+<p class="p1"><span class="Apple-converted-space">              </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "Black Girls Chillin",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Co-founded a thriving digital community supporting and empowering black women globally through meaningful connections and safe spaces.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "/api/placeholder/600/400",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>},</p>
+<p class="p1"><span class="Apple-converted-space">              </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "Real Spirits. Real Supper.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Produced an innovative dinner series celebrating Atlanta's behind-the-scenes entertainment professionals.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "/api/placeholder/600/400",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>].map((project, index) =&gt; (</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;motion.div</p>
+<p class="p1"><span class="Apple-converted-space">                </span>key={index}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>initial={{ opacity: 0, y: 20 }}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>whileInView={{ opacity: 1, y: 0 }}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>transition={{ duration: 0.5, delay: index * 0.1 }}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>className="group cursor-pointer"</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div className="relative overflow-hidden rounded-lg mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;img</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>src={project.image}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>alt={project.title}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 className="text-xl font-bold mb-2"&gt;{project.title}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p className="text-gray-600 mb-4"&gt;{project.description}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div className="flex items-center text-purple-600 font-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Learn More &lt;ArrowRight className="ml-2 w-4 h-4" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/motion.div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>))}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>{/* Services */}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section className="py-20 px-8 bg-purple-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div className="max-w-6xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2 className="text-3xl font-bold mb-12 text-center"&gt;What I Do&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{[</p>
+<p class="p1"><span class="Apple-converted-space">              </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>icon: &lt;Lightbulb className="w-8 h-8" /&gt;,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "Brand Strategy",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Creating distinctive brand identities through compelling storytelling and strategic business planning."</p>
+<p class="p1"><span class="Apple-converted-space">              </span>},</p>
+<p class="p1"><span class="Apple-converted-space">              </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>icon: &lt;Rocket className="w-8 h-8" /&gt;,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "Event Management",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Crafting unforgettable experiences by blending imaginative concepts with meticulous execution."</p>
+<p class="p1"><span class="Apple-converted-space">              </span>},</p>
+<p class="p1"><span class="Apple-converted-space">              </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>icon: &lt;Heart className="w-8 h-8" /&gt;,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "Experiential Design",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Developing immersive brand experiences that captivate and engage audiences."</p>
+<p class="p1"><span class="Apple-converted-space">              </span>},</p>
+<p class="p1"><span class="Apple-converted-space">              </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>icon: &lt;Users className="w-8 h-8" /&gt;,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "Community Building",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Fostering authentic connections through strategic engagement and meaningful interactions."</p>
+<p class="p1"><span class="Apple-converted-space">              </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>].map((service, index) =&gt; (</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;motion.div</p>
+<p class="p1"><span class="Apple-converted-space">                </span>key={index}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>initial={{ opacity: 0, y: 20 }}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>whileInView={{ opacity: 1, y: 0 }}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>transition={{ duration: 0.5, delay: index * 0.1 }}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow"</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div className="text-purple-600 mb-4"&gt;{service.icon}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 className="text-xl font-bold mb-4"&gt;{service.title}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p className="text-gray-600"&gt;{service.description}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/motion.div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>))}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>{/* Contact */}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section className="py-20 px-8 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div className="max-w-3xl mx-auto text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2 className="text-3xl font-bold mb-6"&gt;Let's Create Something Amazing&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p className="text-gray-600 mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Ready to transform your brand through purposeful storytelling and meaningful experiences?</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button className="bg-purple-600 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-purple-700 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Get in Touch</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>);</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1">export default Portfolio;</p>
+</body>
+</html>
